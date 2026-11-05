@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Administração · Associação de Capoeira Senzala</title>
+<meta name="description" content="Área do administrador – inscrições da Associação de Capoeira Senzala.">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#13692f">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Senzala">
+<link rel="icon" href="assets/logo.jpeg">
+<link rel="apple-touch-icon" href="assets/icon-192.png">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="top">
+  <div class="top-in">
+    <img src="assets/logo.jpeg" alt="Logotipo" class="logo">
+    <div>
+      <h1>Área do administrador</h1>
+      <p>Associação de Capoeira Senzala · Inscrições de associados</p>
+      <p class="sub"><a href="index.html">← Voltar para a ficha de inscrição</a></p>
+    </div>
+  </div>
+</header>
+<main>
+  <section class="panel">
+    <div id="adm"></div>
+  </section>
+</main>
+<dialog id="dlg">
+  <div class="dlg-in" id="dbody"></div>
+  <div class="dlg-bar">
+    <button class="btn ghost" id="pdf">Imprimir / PDF</button>
+    <button class="btn ghost danger" id="del">Excluir</button>
+    <span class="spacer"></span>
+    <button class="btn ghost" id="save" style="display:none">Salvar alterações</button>
+    <button class="btn ghost" id="cls">Fechar</button>
+  </div>
+</dialog>
+<footer>© Associação de Capoeira Senzala · Belém, Pará, Brasil</footer>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js"></script>
+<script src="js/config.js"></script>
+<script src="js/admin.js"></script>
+<script>if("serviceWorker"in navigator)window.addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})});</script>
+</body>
+</html>

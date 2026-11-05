@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ficha de Inscrição · Associação de Capoeira Senzala</title>
+<meta name="description" content="Inscrição de associados da Associação de Capoeira Senzala – Belém, Pará.">
+<meta name="theme-color" content="#13692f">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Senzala">
+<link rel="icon" href="assets/logo.jpeg">
+<link rel="apple-touch-icon" href="assets/icon-192.png">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="top">
+  <div class="top-in">
+    <img src="assets/logo.jpeg" alt="Logotipo da Associação de Capoeira Senzala" class="logo">
+    <div>
+      <h1>Associação de Capoeira Senzala</h1>
+      <p>Fundada em 29 de novembro de 1978 · CNPJ 02.912.638/0001-24</p>
+      <p>Lei de Utilidade Pública Municipal 8.285, 10/12/2003</p>
+    </div>
+  </div>
+</header>
+<main>
+<section class="panel">
+  <h2>Inscrição de Associado</h2>
+  <div id="draft" class="note" style="display:none"></div>
+  <form id="fm" novalidate autocomplete="on">
+    <input type="text" name="site" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+    <fieldset><legend>Dados pessoais</legend>
+      <div class="photo">
+        <div class="ph" id="ph">foto 3x4</div>
+        <label>Foto (3x4)<input type="file" id="foto" accept="image/*"></label>
+      </div>
+      <div class="g">
+        <label class="c12">Nome completo *<input name="nome" required autocomplete="name"></label>
+        <label class="c6">Apelido<input name="apelido" autocomplete="nickname"></label>
+        <label class="c3">Graduação<input name="graduacao"></label>
+        <label class="c3">Cordel<select name="cordel">
+          <option value="">Selecione</option>
+          <option>CINZA</option><option>VERDE E CINZA</option><option>AMARELO E CINZA</option><option>AZUL E CINZA</option>
+          <option>VERDE</option><option>AMARELO</option><option>AZUL</option>
+          <option>VERDE E AMARELO</option><option>VERDE E AZUL</option><option>AMARELO E AZUL</option><option>VERDE, AMARELO E AZUL</option>
+          <option>VERDE E BRANCO</option><option>AMARELO E BRANCO</option><option>AZUL E BRANCO</option><option>BRANCO</option>
+        </select></label>
+        <label class="c4">Data de nascimento *<input type="date" name="nascimento" required autocomplete="bday"></label>
+        <label class="c4">Peso (kg)<input name="peso" inputmode="decimal"></label>
+        <label class="c4">Altura (m)<input name="altura" inputmode="decimal"></label>
+        <label class="c4">Naturalidade<input name="naturalidade"></label>
+        <label class="c4">Nacionalidade<input name="nacionalidade" value="Brasileira"></label>
+        <label class="c4">Tipo sanguíneo / RH
+          <select name="rh"><option value="">Selecione</option><option>A+</option><option>A-</option><option>B+</option><option>B-</option><option>AB+</option><option>AB-</option><option>O+</option><option>O-</option></select>
+        </label>
+        <label class="c4">Estado civil<input name="estadoCivil"></label>
+        <label class="c4">Profissão<input name="profissao" autocomplete="organization-title"></label>
+        <label class="c4">Local de trabalho<input name="localTrabalho" autocomplete="organization"></label>
+        <label class="c12">Escolaridade<input name="escolaridade"></label>
+      </div>
+    </fieldset>
+    <fieldset><legend>Documentos</legend>
+      <div class="g">
+        <label class="c4">RG<input name="rg"></label>
+        <label class="c4">Órgão / exp. em<input name="orgaoExp" placeholder="Ex.: SSP-PA, 10/05/2015"></label>
+        <label class="c4">CPF *<input name="cpf" inputmode="numeric" maxlength="14" required placeholder="000.000.000-00" autocomplete="off"></label>
+      </div>
+    </fieldset>
+    <fieldset><legend>Endereço</legend>
+      <div class="g">
+        <label class="c3">CEP<input name="cep" inputmode="numeric" maxlength="9" placeholder="00000-000" autocomplete="postal-code"></label>
+        <label class="c9">Endereço<input name="endereco" autocomplete="street-address"></label>
+        <label class="c4">Bairro<input name="bairro"></label>
+        <label class="c5">Cidade<input name="cidade" value="Belém"></label>
+        <label class="c3">Estado<input name="estado" value="PA" maxlength="2"></label>
+      </div>
+    </fieldset>
+    <fieldset><legend>Contato</legend>
+      <div class="g">
+        <label class="c6">Celular / WhatsApp *<input type="tel" name="celular" inputmode="tel" maxlength="15" required placeholder="(91) 90000-0000" autocomplete="tel"></label>
+        <label class="c6">E-mail<input type="email" name="email" autocomplete="email"></label>
+        <label class="c12">Contato em caso de emergência<input name="emergencia" placeholder="Nome e telefone"></label>
+      </div>
+    </fieldset>
+    <fieldset><legend>Filiação</legend>
+      <div class="g">
+        <label class="c6">Mãe<input name="mae"></label>
+        <label class="c6">Pai<input name="pai"></label>
+      </div>
+    </fieldset>
+    <fieldset><legend>Saúde</legend>
+      <label>Obs. informações de saúde<textarea name="saude" rows="3" placeholder="Alergias, condições, medicamentos…"></textarea></label>
+    </fieldset>
+    <fieldset><legend>Termo de adesão</legend>
+      <p class="term">Eu, <input class="inline" name="termoNome" placeholder="seu nome completo" required>, estou ciente e concordo com todos os termos, condições e regulamentos da Associação de Capoeira Senzala conforme apresentados no Estatuto. Declaro compreender as obrigações associadas a esta inscrição, autorizando a divulgação e utilização de qualquer imagem, voz ou dados pessoais coletados durante a participação em atividades realizadas pela ASSOCASE, para fins institucionais, tais como promoção de eventos, publicidade e prestação de contas das atividades, em conformidade com a legislação vigente. Confirmo meu interesse e compromisso em participar da ASSOCASE, comprometendo-me a cumprir todas as obrigações nela vigentes.</p>
+      <label class="chk"><input type="checkbox" name="aceite" required> Li e concordo com o termo acima. *</label>
+      <p class="lbl">Assinatura digital * <small>(desenhe com o dedo ou o mouse)</small></p>
+      <canvas id="sig" width="640" height="160" aria-label="Quadro de assinatura"></canvas>
+      <button type="button" class="btn ghost" id="clr">Limpar assinatura</button>
+    </fieldset>
+    <div id="out" role="status" aria-live="polite"></div>
+    <button class="btn" id="send" type="submit">Enviar inscrição</button>
+    <p class="protocol" id="proto"></p>
+  </form>
+</section>
+</main>
+<footer>© Associação de Capoeira Senzala · Belém, Pará, Brasil · <a href="admin.html">Área do administrador</a></footer>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js"></script>
+<script src="js/config.js"></script>
+<script src="js/app.js"></script>
+<script>if("serviceWorker"in navigator)window.addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})});</script>
+</body>
+</html>

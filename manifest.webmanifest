@@ -1,0 +1,17 @@
+{
+  "name": "Senzala · Inscrição de Associados",
+  "short_name": "Senzala",
+  "description": "Ficha de inscrição e administração da Associação de Capoeira Senzala",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f3f5f0",
+  "theme_color": "#13692f",
+  "lang": "pt-BR",
+  "icons": [
+    { "src": "assets/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "assets/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "assets/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
